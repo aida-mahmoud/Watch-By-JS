@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>    
+    <title> Watch</title>
+    <style>
+        input,select{
+            display: flex;
+            width: 45px;
+            height: 40px;
+            border-radius: 3px;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        select{
+            font-size: 18px;
+            width: 60px;
+            height: 40px;
+        }
+        #watch{
+            margin-top:5%;
+            margin-left: 34%;
+            width: 400px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid black;
+            border-radius: 30%;
+            background-color: #81ecec;
+        }
+        #myw{
+            display: flex;
+            align-items: center;
+            justify-content:space-around;
+            width: 90%;
+        }
+        #secwatch{
+            margin-top:100px;
+            margin-left: 30%;
+            width: 1000px;
+            height: 200px;
+        }
+        #secwatch div{
+            float: left;
+            width: 120px;
+            height: 100px;
+            font-size: 70px;
+        }
+        #set{
+            background-color: #d63031;
+            color: white;
+            width: auto;
+            height:  auto;
+            font-size: 25px;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+        #set:hover{
+            background-color: rgb(61, 61, 245);
+        }
+
+    </style>
+    </head>
+    <body>
+        <div id="watch">
+            <div id="myw">
+            <input id="hour" type="number" placeholder="hour" value="0">
+            <input id="min" type="number" placeholder="mins" value="0">
+            <input id="sec" type="number" placeholder="sec" value="0">
+            <select id="d">
+                <option>PM</option>
+                <option>AM</option>
+            </select>
+            <button id="set">Set</button>
+        </div>
+        </div>
+        <div id="secwatch" >
+            <div id="myhour"></div>
+            <div id="mymin"></div>
+            <div id="mysec"></div>
+            <div id="d2"></div>
+        </div>
+        
+        <script src="t7_watch.js"></script>
+    </body>    
+</html>
